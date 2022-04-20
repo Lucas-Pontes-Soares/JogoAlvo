@@ -1,0 +1,146 @@
+body {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #191919;
+}
+
+/* LAYOUT parte de cima */
+
+.nome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+}
+
+.jogo {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.meio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #191919;
+}
+
+.infor {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.escolher {
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 9;
+}
+
+.tempoJog {
+    padding-left: 135px;
+    padding-bottom: 5px;
+}
+
+#comecar {
+    background-color: white;
+    width: 115px;
+    height: 35px;
+}
+
+.escolherTempo{
+    padding-left: 25px;
+    text-align: center;
+}   
+
+.acerte {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+select {
+    width: 50px;
+    height: 35px;
+}
+
+/*Grid e imagem fundo do campo de alvos */
+.campo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url(./imagens/high-resolution-black-background-09.jpg);
+    background-size: cover;
+    padding-left: 35px;
+}
+
+
+/* Tamanho e alvos redondos*/
+button {
+    width: 90px;
+    height: 110px;
+    border-radius: 100px;
+}
+
+/* Botão finalizar branco e tamanho */
+#botaofim {
+    width: 115px;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+/* Aim Test fonte, cor e espaçamento*/
+h1 {
+    font-family: 'Akronim', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+/* Acerte os alvos! em branco e espaçamento*/
+h2 {
+    color: white;
+}
+
+
+/* como funciona */
+
+p {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Parte abaixo do campo, grid, imagem fundo */
+.baixo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #191919;
+}
+
+/* div botão finalizar grid e espaçamento */
+.finalizar {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    padding-left: 10px;
+}
+
+/* cor botão desabilitado */
+button[disabled] {
+    background-color: white;
+}
+
+/* cor botão habilitado */
+button {
+    background-color: red;
+}
+
+
+
+
+
+

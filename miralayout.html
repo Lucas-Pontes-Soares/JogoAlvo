@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mira</title>
+    <link rel="stylesheet" href="stylelayout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+</head>
+
+<body onload="start()">
+    <div class="nome">
+        <div class="jogo">
+            <h1>Aim Test</h1>
+        </div>
+    </div>
+    <div class="meio">
+        <div class="infor">
+            <h2>Como funciona?</h2>
+            <p>Para acumular pontos acerte os alvos ligados, caso erre o alvo, seus números de erros aumentarão.</p> 
+            <p>Ao finalizar a rodada seus pontos e erros serão exibidos!</p>
+            <p>(Os alvos ligados são aleatórios)</p>
+        </div>
+
+        <div class="escolher">
+            <div class="tempoJog">
+                <h2>Tempo para jogar:</h2>
+            </div>
+            <div class="escolherTempo">
+               <h2>Minutos: <select name="minutos" id="minutos"></select></h2>
+               <h2>Segundos: <select name="segundos" id="segundos"></select></h2> 
+             <br>
+               <button id="comecar" onclick="conometro()">Começar!</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 id="display"></h3>
+    </div>
+    <h2 class="acerte">Acerte os Alvos!</h2>
+    <div class="campo" onclick="errou()">
+        
+        <div>
+            <button value="Enviar" id="alvo1" onclick="acerto(1)"><img src="imagens/download.jpg" height="75px" width="65px"></button> <br> <br> 
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo2" onclick="acerto(2)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo3" onclick="acerto(3)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo4" onclick="acerto(4)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo5" onclick="acerto(5)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo6" onclick="acerto(6)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo7" onclick="acerto(7)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo8" onclick="acerto(8)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo9" onclick="acerto(9)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo10" onclick="acerto(10)"><img src="imagens/download.jpg" height="75px" width="65px"></button> <br> <br> 
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo11" onclick="acerto(11)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo12" onclick="acerto(12)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo13" onclick="acerto(13)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo14" onclick="acerto(14)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo15" onclick="acerto(15)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo16" onclick="acerto(16)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo17" onclick="acerto(17)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo18" onclick="acerto(18)"><img src="imagens/download.jpg" height="75px" width="65px"></button> 
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo19" onclick="acerto(19)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo20" onclick="acerto(20)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo21" onclick="acerto(21)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo22" onclick="acerto(22)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo23" onclick="acerto(23)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo24" onclick="acerto(24)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo25" onclick="acerto(25)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo26" onclick="acerto(26)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+
+        <div>
+            <button value="Enviar" id="alvo27" onclick="acerto(27)"><img src="imagens/download.jpg" height="75px" width="65px"></button>  
+        </div>
+    </div> <br>
+    <div class="baixo">
+        <div class="finalizar">
+            <button id="botaofim" onclick="fim()">Finalizar!</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+        var pontos = 0;
+        var button;
+        var cont=1;
+        var erros=0;
+        var totalerros=0;
+        var sortear;
+        var sortear1;
+
+        var display = document.getElementById("display");
+
+        var minutos = document.getElementById("minutos");
+        var segundos = document.getElementById("segundos");
+        var comecar = document.getElementById("comecar");
+
+        var conometroSeg;
+        var minutoAtual;
+        var segundoAtual;
+        var intervalo;
+
+        //conometro
+
+        for(var i = 0; i <= 60; i++){
+            minutos.innerHTML+='<option value="'+i+'"> '+i+'</option>';
+        }
+
+        for(var i = 1; i <= 60; i++){
+            segundos.innerHTML+='<option value="'+i+'"> '+i+'</option>';
+        }
+
+        function conometro(){
+            document.getElementById("botaofim").disabled = true;
+            minutoAtual = minutos.value; //value o que está selecionado
+            segundoAtual = segundos.value;
+            display.innerHTML = minutoAtual + ":" + segundoAtual; //mudar o h3, conometro
+
+            intervalo = setInterval(function(){
+                segundoAtual--;
+
+                if(segundoAtual <= 0){
+                    if (minutoAtual > 0) {
+                        minutoAtual --;
+                        segundoAtual = 59;
+                    }
+                    else {
+                        fim();
+                        clearInterval(intervalo);
+                    }
+                }
+                display.innerHTML = minutoAtual + ":" + segundoAtual;
+            },1000)
+        }
+
+        //desabilitar 26
+        function start(){
+            while (cont<=26){
+                document.getElementById("alvo" + cont).disabled = true; 
+                cont ++;
+            }
+        }
+        //habiltar em 4 segundos e desabilitar em 2 segundos
+            setInterval(function(){
+                sortear = Math.floor(Math.random() * 27 + 1);
+                console.log(sortear);
+                document.getElementById("alvo" + sortear).disabled = false;
+                setTimeout(function(){
+                    document.getElementById("alvo" + sortear).disabled = true;
+                }, 2*1000);
+            }, 3*1000);
+
+        //caso acerte desabilita o acertado e habilita aleatório
+        function acerto(num) {
+
+            pontos = pontos + 1;
+            document.getElementById("alvo" + num).disabled = true ;
+            var sortear1 = Math.floor(Math.random() * 27 + 1);
+            console.log(sortear);
+            //habilitar
+            document.getElementById("alvo" + sortear1).disabled = false;
+            console.log("alvo" + sortear1)
+            
+        }
+
+        //errar adicionar erro
+        function errou() {
+            erros = erros + 1
+        }
+
+        // apertar no botão finalizar
+        // mostra os erros
+        // mostra os acertos
+        // reseta a página em 3 segundos
+        function fim() {
+            if (erros > pontos){
+                totalerros = erros - pontos
+            }
+
+            else {
+                totalerros = pontos - erros
+            }
+
+            alert ("Seus pontos foram = " + pontos);
+            alert("Seus errros foram " + totalerros);
+            alert("Resetando jogo em 3 segundos!");
+            setTimeout(function(){
+                clearInterval();
+                document.location.reload(true);
+            }, 3*1000); 
+        }
+    </script>
